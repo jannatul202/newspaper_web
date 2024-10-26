@@ -1,0 +1,453 @@
+/*
+  Theme Name: newspaper
+  Support: 
+  Description:   
+  Version: 1.0
+*/
+
+/* CSS Index
+============================
+01. Google Fonts
+02. Variable CSS start
+03. common css
+04. header_sec css
+05. nav_sec css
+
+============================
+*/
+/*=============================
+  01. download Fonts
+===============================*/
+@font-face {
+    font-family: Georgia;
+    src: url(georgia.ttf);
+}
+/*=============================
+ 02. Variable CSS start
+===============================*/
+ :root {
+    --body-font-family: Georgia;
+    --primary-color: #565656;
+    --primary-color-2: #7c4fe0;
+    --content-bg:#e0e0e0;
+    --secondary-color: #666;
+    --secondary-color-2: #777;
+    --font-color:#444444;
+    --font--red:#982115;
+    --black:#180202;
+    --white:#ffffff;
+    --con-1:#a6a6a6;
+    --con-2:#9f8f8f;
+    --manu-bg:#797474;
+    --transition: 0.4s ease-in-out;
+}
+  
+/* =================================
+03. common css
+=====================================*/
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;  
+    box-sizing: border-box;
+}
+body{
+    font-family: var(--body-font-family);
+    line-height: var(--body-line-height);
+    color: var(--black);
+    background: var(--black);
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+h1,h2, h3, h4,h5,h6{
+    margin: 0;
+    padding: 0;
+}
+a{
+    color: var(--black);
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+table{
+    border: none;
+}
+p{
+    margin: 0;
+    padding: 0;
+}
+.templete{
+    background: var(--content-bg);
+    width: 1000px;
+    margin: 0 auto;
+}
+/* =================================
+04. header_top css
+=====================================*/
+.header_top{
+    padding: 30px 10px;
+    color: var(--white);
+    background-color: #2d2928;
+}
+.header_top .topbar_left{
+    float: left;
+}
+.header_top .topbar_left ul {
+    margin-top: -10px;
+}
+.header_top .topbar_left ul li {
+    float: left;
+    padding: 0px 5px;
+    border-right: 1px solid;
+}
+.header_top .topbar_left ul li:last-child {
+    border-right: none;
+}
+.header_top .topbar_left ul li a{
+    color: var(--content-bg);
+}
+.header_top .topbar_right{
+    float: right;
+    margin-top: -18px;
+
+}
+.header_top .topbar_right a i {
+    text-align: center;
+    color: var(--black);
+    background: var(--content-bg);
+    border-radius: 50%;
+    height: 35px;
+    line-height: 35px;
+    width: 35px;
+    margin-left: 5px;
+}
+/* =================================
+05. header css
+=====================================*/
+.header{
+    padding: 20px 0px;
+    text-align: center;
+}
+.header .header_tittle{
+    font-size: 100px;
+    line-height: 120px;
+}
+.header .sub_tittle{
+    font-size: 20px;
+    line-height: 24px;
+}
+/* =================================
+06. nav_section css
+=====================================*/
+.clear{
+    overflow: hidden;
+}
+.nav_section{
+    padding: 0px 15px 30px 15px;    
+}
+.nav_section  ul {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border-top: 3px double var(--black);
+    border-bottom: 3px double var(--black);
+
+}
+.nav_section ul li {
+    float: left;
+    margin: 5px 20px 5px 0px;
+}
+.nav_section ul li a {
+    padding: 5px 10px;
+    display: block;
+    font-size: 14px;
+    line-height: 14px;
+}
+.nav_section ul li a:hover{
+  color: var(--black);
+  opacity: 0.5;
+  transition: var(--transition);
+}
+/* =================================
+07. hero_sec css
+=====================================*/
+.hero_sec{
+    padding: 10px 15px;
+} 
+.hero_sec .hero_main{
+    overflow: hidden;
+    padding-bottom: 15px;
+    border-bottom: 3px double var(--black);
+}
+.hero_sec .hero_main .hero_left{
+    float: left;
+    width: 500px;
+}
+.hero_sec .hero_main .hero_left .hero_left_content{
+    margin-top: 17px;
+}
+.tittle {
+    font-size: 22px;
+    line-height: 22px;
+    color: var(--font-color);
+    margin-bottom: 10px;
+}
+.description {
+    font-size: 16px;
+    line-height: 20px;
+    color:var(--secondary-color);
+}
+.hero_right_conblog {
+    margin-bottom: 15px;
+}
+.hero_sec .hero_main .hero_right{
+    float: right;
+    width: 440px;
+}
+.hero_sec .hero_main .hero_right .hero_right_blog {
+    overflow: hidden;
+    margin-bottom: 18px;
+}
+.hero_sec .hero_main .hero_right .hero_right_blog .right_blg_img {
+    float: left;
+    margin-right: 10px;
+    padding: 5px;
+    border: 1px solid black;
+    height: 100px;
+    width: 100px;
+}
+.hero_sec .hero_main .hero_right .hero_right_blog .right_blg_img a img{
+    height: 100%;
+    width: 100%;
+}
+.hero_sec .hero_main .hero_right .hero_right_blog .right_blg_content {
+    float: right;
+    width: 315px;
+    overflow: hidden;
+    margin-top: 8px;
+}
+/* =================================
+08. all_blog_sec css
+=====================================*/
+.all_blog_sec{
+    padding: 20px 15px;
+}
+.all_blog_sec .all_blog_main{
+    overflow: hidden;
+    border-bottom: 3px double var(--black);
+}
+.all_blog_sec .all_blog_main .blog_left{
+    float: left;
+    width: 602px;
+}
+.float_left{
+    float: left;
+}
+.float_right{
+    float: right;
+}
+.all_blog_sec .all_blog_main .blog_left .sort_blog_main{
+    overflow: hidden;
+    border-bottom: 3px double var(--black);
+    width: 610px;
+}
+.all_blog_sec .all_blog_main .blog_left .sort_blog_main .sort_blog_left{
+    width: 300px;
+}
+.all_blog_sec .all_blog_main .blog_left .sort_blog_main 
+.sort_blog_left .tittle_two {
+    font-size: 16px;
+    line-height: 16px;
+    color: var(--secondary-color);
+    border-bottom: 2px solid var(--secondary-color-2);
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+}
+.all_blog_sec .all_blog_main .blog_left .sort_blog_main 
+.sort_blog_left .sort_blog {
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+.all_blog_sec .all_blog_main .blog_left .sort_blog_main 
+.sort_blog_left .sort_blog .sortb_img {
+    float: left;
+    padding: 4px;
+    border: 1px solid var(--black);
+    height: 65px;
+    width: 65px;
+}
+.all_blog_sec .all_blog_main .blog_left .sort_blog_main 
+.sort_blog_left .sort_blog .sortb_img a img{
+    height: 100%;
+    width: 100%;
+}
+.all_blog_sec .all_blog_main .blog_left .sort_blog_main 
+.sort_blog_left .sort_blog .sortb_contect{
+    float: right;
+    width: 225px;
+}
+.all_blog_sec .all_blog_main .blog_left .sort_blog_main 
+.sort_blog_left .sort_blog .sortb_contect .sortb_tittle {
+    font-size: 14px;
+    line-height: 15px;
+    color: var(--black);
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+.all_blog_sec .all_blog_main .blog_left .sort_blog_main
+.sort_blog_left .sort_blog .sortb_contect .sortb_description{
+    font-size: 14px;
+    line-height: 15px;
+    color: var(--secondary-color);
+}
+.all_blog_sec .all_blog_main .blog_left .sort_blog_main
+.sort_blog_left .sort_blog .sortb_contect .read_more{
+    text-align: right;
+}
+.all_blog_sec .all_blog_main .blog_left .sort_blog_main
+.sort_blog_left .sort_blog .sortb_contect .read_more a {
+    font-size: 11px;
+    line-height: 11px;
+    color: var(--font--red);
+}
+.all_blog_sec .blog_left_bottom {
+    overflow: hidden;
+    padding-bottom: 30px;
+}
+.all_blog_sec .blog_left_bottom .top_buttons{
+    margin-top: 30px;  
+}
+.all_blog_sec .blog_left_bottom .top_buttons a{
+    display: inline-block;
+    font-size: 12px;
+    line-height: 15px;
+    padding: 10px 20px;
+    background: var(--black);
+    color: var(--white);
+}
+.all_blog_sec .left_bottom_content{
+    width: 142px;
+    overflow: hidden;
+    margin-right: 10px;
+}
+.all_blog_sec .left_bottom_content .lbottom_tittle {
+    font-size: 14px;
+    line-height: 15px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    color: var(--font--red);
+    font-weight: 600;
+}
+.all_blog_sec .left_bottom_content .lbottom_img {
+    padding: 4px;
+    border: 1px solid black;
+    margin-bottom: 10px;
+    height: 85px;
+    width: 127px;
+}
+.all_blog_sec .left_bottom_content .lbottom_img a img{
+    height: 100%;
+    width: 100%;
+}
+.all_blog_sec .left_bottom_content .lbottom_description{
+    font-size: 14px;
+    line-height: 15px;
+    margin-bottom: 10px;
+    color: var(--secondary-color);
+}
+.all_blog_sec .left_bottom_content .tag_mame {
+    font-size: 13px;
+    line-height: 13px;
+}
+.all_blog_sec .left_bottom_content .tag_mame a{
+    color: var(--font--red);
+    font-weight: 600;
+}
+.all_blog_sec .all_blog_main .blog_right{
+    overflow: hidden;
+    width: 325px;
+}
+.all_blog_sec .all_blog_main .blog_right .blgr_imgcon .long_limg {
+    width: 160px;
+    height: 650px;
+}
+.all_blog_sec .all_blog_main .blog_right .blgr_imgcon .long_limg a img{
+    height: 100%;
+    width: 100%;
+}
+.all_blog_sec .all_blog_main .blog_right .categories {
+    margin-bottom: 15px;
+}
+.img_tittle {
+    font-size: 14px;
+    line-height: 15px;
+    color: var(--secondary-color);
+    font-weight: 600;
+    margin-bottom: 15px;
+    padding-top: 5px;
+    border-top: 5px solid #999999;
+}
+.all_blog_sec .all_blog_main .blog_right .categories .cat_here ul li a {
+    color: var(--font--red);
+    display: inline-block;
+    font-size: 15px;
+    line-height: 22px;
+}
+/* =================================
+09. footer_section css
+=====================================*/
+.footer_section{
+    padding: 0px 15px;
+}
+.footer_section .footer_main{
+    border-bottom: 3px double var(--black);
+    overflow: hidden;
+
+}
+.footer_section .footer_content {
+    width: 200px;
+    margin-right: 55px;
+    margin-bottom: 20px;
+}
+.footer_section .footer_content:last-child{
+    margin-right: unset;
+}
+.footer_section .footer_content .footer_tittle {
+    font-size: 15px;
+    line-height: 15px;
+    color: var(--secondary-color);
+    border-bottom: 1px solid var(--secondary-color);
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    font-weight: 600;
+}
+.footer_section .footer_content .footer_description {
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--font--red);
+}
+/* =================================
+09. copyright_sec css
+=====================================*/
+.copyright_sec{
+    padding: 20px 15px;
+    overflow: hidden;
+}
+.copyright_sec .copyright {
+    float: left;
+    color: var(--secondary-color);
+    font-size: 14px;
+    line-height: 14px;
+}
+.copyright_sec .tname{
+    text-align: right;
+    color: var(--secondary-color);
+    font-size: 14px;
+    line-height: 14px;
+}
